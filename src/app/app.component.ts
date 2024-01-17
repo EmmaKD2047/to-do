@@ -24,6 +24,8 @@ export class AppComponent {
       let newObject = { id: this.tasks.length + 1, text: this.taskInput.nativeElement.value, completed: false };
       this.tasks.push(newObject);
       this.taskInput.nativeElement.value = '';
+    } else {
+      alert('Put in a new task');
     }
   }
 
