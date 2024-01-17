@@ -1,0 +1,209 @@
+.container{
+    background-color: #1A1A1A;
+    height: 100vh;
+    width: 100vw;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 0rem 1rem;
+    background-color: #0D0D0D;
+    height: 20vh;
+    position: relative;
+}
+
+.head h1{
+    font-size: 40px;
+}
+
+.rocket{
+    padding-top: 8px;
+    margin: 0 0.5rem;
+}
+
+#to{
+    color: #4EA8DE;
+}
+
+#do{
+    color: #5E60CE;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 5rem;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.input{
+    width: 90%;
+}
+
+.input input{
+    width: 100%;
+    color: #808080;
+    background-color: #333333;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.input input:focus-within{
+    outline: none;
+    border: 1px solid #8284FA;
+}
+
+.addbtn{
+    width: 20%;
+}
+
+.addbtn button{
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    background-color: #1E6F9F;
+    border: none;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.addbtn button:hover{
+    background-color: #4EA8DE;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #262626;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    border: 1px solid #333333;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 5%;
+}
+
+.check input{
+    cursor: pointer;
+}
+
+#chkbx{
+    width: 17px;
+    height: 17px;
+}
+
+.tasktxt{
+    justify-content: flex-start;
+    width: 80%;
+    padding: 1.4rem 0 1.4rem 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.trash{
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+.trash:hover, .trash svg path:hover{
+    background-color: #333333;
+    fill: #ff0000;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.tcreate, .complete{
+    display: flex;
+}
+
+.tasks{
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.notask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 0 3rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #808080;
+}
+
+.notask h4, .notask p{
+    color: #808080;
+}
+
+.num{
+    background-color: #333333;
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width: 826px) {
+    .add{
+        flex-wrap: wrap;
+    }
+
+    .add .addbtn, .add .input{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .addbtn button{
+        margin: 0;
+    }
+
+    .tasks{
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .add{
+        width: 90%;
+        left: 5%;
+    }
+
+    .tasks{
+        width: 90%;
+    }
+}
